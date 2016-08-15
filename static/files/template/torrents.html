@@ -50,15 +50,7 @@
               ng-click="submitTorrent('start', t)">
               <i class="cloud download icon"></i> Start
             </a>
-            <a ng-if="t.Started" class="ui red button"
-              ng-click="submitTorrent('stop', t)">
-              <i class="stop icon"></i> Stop
-            </a>
-            <a ng-if="!t.Started" class="ui red button" style="z-index: 99999;"
-              ng-click="submitTorrent('delete', t)">
-              <span ng-if="!t.Loaded"><i class="ban icon"></i> Cancel</span>
-              <span ng-if="t.Loaded"><i class="trash icon"></i> Remove</span>
-            </a>
+           
           </div>
         </div>
 
